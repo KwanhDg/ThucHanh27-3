@@ -3,9 +3,9 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity, ImageBackground, K
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export default function NumberScreen({ navigation }) {
-  const [codeNumber, setcodeNumber] = useState('');
+  const [codeNumber, setCodeNumber] = useState(''); 
 
-  const iscodeNumberValid = codeNumber.length === 4;
+  const isCodeNumberValid = codeNumber.length === 4;
 
   return (
     <ImageBackground
@@ -30,19 +30,23 @@ export default function NumberScreen({ navigation }) {
               style={styles.input}
               value={codeNumber}
               placeholder="- - - -"
-              keyboardType="phone-pad"
-              onChangeText={(text) => setcodeNumber(text)}
+              keyboardType="numeric"
+              onChangeText={(text) => setCodeNumber(text.replace(/[^0-9]/g, ''))}
+              maxLength={4}
             />
           </View>
           <TouchableOpacity
-            style={[styles.nextButton, { backgroundColor: iscodeNumberValid ? '#53B175' : '#ccc' }]}
-            disabled={!iscodeNumberValid}
+            style={[styles.nextButton, { backgroundColor: isCodeNumberValid ? '#53B175' : '#ccc' }]}
+            onPress={() => isCodeNumberValid && navigation.navigate('NextScreen')}
+            disabled={!isCodeNumberValid}
           >
             <Icon name="arrow-forward" size={24} color="#fff" />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.resendButton}
-            onPress={() => {}}
+            onPress={() => {
+              console.log('Resend code pressed');
+            }}
           >
             <Text style={styles.resendButtonText}>Resend Code</Text>
           </TouchableOpacity>

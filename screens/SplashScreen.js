@@ -1,16 +1,22 @@
-import React from 'react';
-import { View, Image, StyleSheet, TouchableWithoutFeedback } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Image, StyleSheet } from 'react-native';
 
 export default function SplashScreen({ navigation }) {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.replace('Onboarding');
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [navigation]);
+
   return (
-    <TouchableWithoutFeedback onPress={() => navigation.navigate('Onboarding')}>
-      <View style={styles.container}>
-        <Image
-          source={require('../assets/images/nectar_logo.png')}
-          style={styles.logo}
-        />
-      </View>
-    </TouchableWithoutFeedback>
+    <View style={styles.container}>
+      <Image
+        source={require('../assets/images/nectar_logo.png')}
+        style={styles.logo}
+      />
+    </View>
   );
 }
 
