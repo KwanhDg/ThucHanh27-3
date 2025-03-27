@@ -1,8 +1,9 @@
 # Dương Khải Anh
 ### MSV: 22810350161
 ## Ket qua
-![b5a1fb5a3b038a5dd312](https://github.com/user-attachments/assets/fc177735-7021-4926-9fd2-e33d0c003eb7)
-![8c91856a4533f46dad22](https://github.com/user-attachments/assets/551dbddc-3bcd-40a5-b1df-fbf6bb5bb6e7)
-![bd74e69326ca9794cedb](https://github.com/user-attachments/assets/8d75837f-9cc3-48c0-81d0-42e9d4e0ff93)
-![72125bf59bac2af273bd](https://github.com/user-attachments/assets/7ba43017-7fac-4bc5-adf8-50f657d36673)
-![3f3d7ac7ba9e0bc0528f](https://github.com/user-attachments/assets/0dda9c17-a196-493a-a6f2-22d556ee6f2f)
+
+![7fd816efd0dc608239cd](https://github.com/user-attachments/assets/0e69f993-4166-4112-bd36-df296b74a0c7)
+![2e1e5f2f991c2942700d](https://github.com/user-attachments/assets/3651492f-8101-40f8-a8a0-7615bd8fa4b6)
+![edb4ab986dabddf584ba](https://github.com/user-attachments/assets/ef9454f8-d8e2-4ca2-a78d-62659f41e71f)
+![6092e2bb248894d6cd99](https://github.com/user-attachments/assets/0c03117e-1945-4e2d-b368-939ffc7ca80d)
+![5bbc2798e1ab51f508ba](https://github.com/user-attachments/assets/b7e82c62-dcf9-47c2-9380-379ab89f3cef)
